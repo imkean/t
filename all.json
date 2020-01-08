@@ -1,0 +1,235 @@
+{
+  "+abbali": {
+    "auth": {
+      "fallbackProxy": {
+        "password": "password",
+        "username": "your_name"
+      }
+    },
+    "bypassList": [
+      {
+        "conditionType": "BypassCondition",
+        "pattern": "127.0.0.1"
+      },
+      {
+        "conditionType": "BypassCondition",
+        "pattern": "[::1]"
+      },
+      {
+        "conditionType": "BypassCondition",
+        "pattern": "localhost"
+      }
+    ],
+    "color": "#ca0",
+    "fallbackProxy": {
+      "host": "47.100.199.167",
+      "port": 8080,
+      "scheme": "http"
+    },
+    "name": "abbali",
+    "profileType": "FixedProfile",
+    "revision": "16f7fc5810a"
+  },
+  "+auto switch": {
+    "color": "#99dd99",
+    "defaultProfileName": "direct",
+    "name": "auto switch",
+    "profileType": "SwitchProfile",
+    "revision": "16f7f84f93a",
+    "rules": [
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "img.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "p\\d+.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "s\\d+.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "s0.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "s1.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "p0.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "s3plus.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "s3-img.meituan.net"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.tujiacdn.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "promotionstaticfile.tujia.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "pic.tujia.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "staticfile.tujia.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "pic\\d+.tujia.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "tracelog.tujia.com"
+        },
+        "profileName": "direct"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.alibaba.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.aliyun.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.ip"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.alicdn.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.aliapp.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.zhenguo.*"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.meituan.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.meituan.net"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.meituan.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.tujia.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "*.xiaozhu.com"
+        },
+        "profileName": "abbali"
+      },
+      {
+        "condition": {
+          "conditionType": "HostWildcardCondition",
+          "pattern": "ip-api.com"
+        },
+        "profileName": "abbali"
+      }
+    ]
+  },
+  "-confirmDeletion": true,
+  "-downloadInterval": 1440,
+  "-enableQuickSwitch": false,
+  "-monitorWebRequests": true,
+  "-quickSwitchProfiles": [],
+  "-refreshOnProfileChange": true,
+  "-revertProxyChanges": true,
+  "-showExternalProfile": true,
+  "-showInspectMenu": true,
+  "-startupProfileName": "",
+  "schemaVersion": 2
+}
